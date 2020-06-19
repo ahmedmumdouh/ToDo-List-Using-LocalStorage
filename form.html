@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+		<style type="text/css">
+            body{
+                font-size: 20px ;
+                text-align: center;
+                color: blue;
+                
+            }
+            #toDoApp{
+                margin: auto auto;
+                width: 500px;
+                text-align: center;
+                vertical-align: middle;
+                background-color: brown;
+                border-style: solid;
+                border-color: darkorchid;
+                border-width: 10px;
+                border-radius: 50px;
+            }
+            /* #toDoState div{
+                display: inline-block;                
+            } */
+            #toDoList{
+                text-align: center;
+                width: 500px;
+                display: flex;
+                flex-direction: column;  
+                align-items: center; 
+            }
+            #unDoneList li {
+                display: block;
+                color: chocolate;        
+            }
+            #doneList .done{
+                display: block;
+                color: red;
+                background-color: black;
+                
+            }
+            #doneList li{
+                display: block;
+                color: black;
+            }
+            ul button{
+                background-color: yellow;
+                color: blueviolet;
+                float: right ;
+            }
+   
+            #toDOText button, #toDOText label ,#toDoText div{
+                display: inline-block ;
+                
+            } 
+            /* .done{
+
+            }   */
+
+		</style>
+		
+	</head>
+	<body>
+        <div id="toDoApp">
+
+            <div id="toDoText">
+                <label>Task Name : </label><div><input type="text" id="task" required></div>
+                <button id="add">+</button>
+            </div>
+            <div id="toDoState"> 
+                <lable>Tasks :</lable><div id="curState"></div>
+            </div>
+        
+            <div id="toDoList">
+                <ul id="unDoneList">
+            
+                </ul>
+                <lable>Completed Tasks</lable>
+                <ul id="doneList">
+                    
+                </ul>
+            </div>
+        </div>
+        
+     
+		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="js/player.js"></script>
+	</body>
+</html>
